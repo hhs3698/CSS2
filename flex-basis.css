@@ -1,0 +1,20 @@
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    text-align:center;
+    flex-basis: 200px;
+    /*위에서 정한 넓이와 높이와 상관없이 basis의 기준에 맞추어 사이즈가 정해짐*/
+}
