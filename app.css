@@ -1,0 +1,67 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2{
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    /*부모 컨테이너에 플렉스를 준다*/
+    flex-direction: row;
+    /*
+    row 옆으로 정렬
+    row-reverse 옆으로 정렬이지만 오른쪽부터
+    column 위아래로 정렬 
+    column-reverse 위아래로 정렬이지만 밑에부터
+    */
+    justify-content: center;
+    /*
+    주축 관리 옵션, no 교차축
+    정렬 옵션(flex direction이 수평(row)이나 수직(column)이냐에 따라서 정렬도 달라짐)
+    왼쪽 정렬 : flex-start
+    오른쪽 정렬: flex-end
+    가운데 정렬: center 
+    각 컨텐츠들의 사이공간을 띄우고 싶을 때: space-between
+    space-evenly
+
+    */
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    text-align:center;
+    /*수평방향을 조절한다*/
+    flex-basis: 600px;
+}
+
+div:nth-of-type(1) {
+    flex-grow: 1;
+    flex-shrink:2;
+}
+div:nth-of-type(5) {
+    flex-grow: 2;
+}
+
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+main .sidebar {
+    background-color: #6930c3;
+    flex:1 2 300px;
+}
+main .maincontent {
+    background-color: #80ffdb;
+    flex: 2 1 800px;
+}
+
+
